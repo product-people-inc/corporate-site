@@ -1,0 +1,157 @@
+* {
+    font-family: 'Lato', 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    line-height: 1.8rem;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color:hsla(0,0%,100%,1);
+background-image:
+radial-gradient(at 100% 100%, hsla(193,100%,50%,0.1) 0px, transparent 50%),
+radial-gradient(at 0% 0%, hsla(341,0%,100%,1) 0px, transparent 50%);
+background-attachment: fixed;
+}
+
+header, main, footer {
+    width: 100%;
+}
+
+a {
+    color: #444444;
+}
+
+p {
+    text-align: center;
+}
+
+/* header */
+header {
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header img {
+    width: 350px;
+    max-width: 100%;
+}
+
+/* main */
+main {
+    margin-top: 120px;
+}
+
+main h1 {
+    text-align: center;
+}
+
+article {
+    margin-bottom: 5em;
+}
+
+section {
+    margin-bottom: 3em;
+    padding: 0 2em 0 2em;
+}
+
+article > h1 {
+    font-weight: 300;
+    font-size: 3.0rem;
+    letter-spacing: -0.1rem;
+    /* background: linear-gradient(transparent 70%, #fff952 70%, #fff952 100%); */
+}
+
+section > h1 {
+    font-weight: bold;
+    /* background: linear-gradient(transparent 70%, #2eb2ff 70%, #2eb2ff 100%);*/
+}
+
+ul {
+    padding:0.2em 1em 0 1em;
+    list-style-type: none;
+}
+
+li {
+    padding:0 0 0.7em 0;
+}
+
+main li:before {
+    content: "• ";
+}
+
+article.mission {
+    padding: 7em 0 15em 0;
+}
+
+article.mission .mission_statement {
+    font-size: 1.5em;
+    line-height: 2.5rem;
+}
+
+article.service  li {
+    font-size: 0.8em;
+    text-align: center;
+    color: #555555;
+}
+
+article.coach {
+    text-align: center;
+}
+article.coach .profile_photo {
+    border-radius: 5%;
+    width: 200px;
+}
+article.coach .profile_detail{
+    max-width: 500px;
+    margin:auto;
+}
+article.coach .coach_name {
+    font-weight: bold;
+}
+
+article.coach .sns li {
+    display: inline;
+    font-size: 1.3em;
+    padding-right: 0.4em;
+}
+article.coach .sns li:before {
+    content: none;
+}
+article.coach .sns a {
+    text-decoration: underline;
+}
+
+article.company table.company_info {
+    margin:auto;
+    max-width: 500px;
+}
+article.company table.company_info th, table.company_info td {
+    border-bottom: solid black 1px;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+
+}
+article.company table.company_info th {
+    font-weight: bold;
+    text-align: left;
+    vertical-align: top;
+    padding-right: 4em;
+    min-width: 100px;
+}
+article.company table.company_info td {
+
+}
+
+article.contact {
+    margin-bottom: 25em; 
+}
+/* footer */
