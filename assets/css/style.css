@@ -25,6 +25,9 @@ a {
 p {
     text-align: center;
 }
+span.note {
+    font-size: 0.7rem;
+}
 
 /* header */
 header {
@@ -144,7 +147,7 @@ article.company table.company_info th {
     font-weight: bold;
     text-align: left;
     vertical-align: top;
-    padding-right: 4em;
+    padding-right: 2em;
     min-width: 100px;
 }
 article.company table.company_info td {
