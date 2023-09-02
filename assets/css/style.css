@@ -9,7 +9,7 @@ body {
     max-width: 1200px;
     background-color:hsla(0,0%,100%,1);
 background-image:
-radial-gradient(at 100% 100%, hsla(193,100%,50%,0.1) 0px, transparent 50%),
+radial-gradient(at 100% 100%, hsla(193,100%,50%,0.1) 0px, transparent 80%),
 radial-gradient(at 0% 0%, hsla(341,0%,100%,1) 0px, transparent 50%);
 background-attachment: fixed;
 }
