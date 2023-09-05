@@ -109,7 +109,7 @@ article.service  li {
 article.coach {
     text-align: center;
 }
-article.coach .profile_photo {
+.profile_photo {
     border-radius: 5%;
     width: 200px;
 }
@@ -158,3 +158,91 @@ article.contact {
     margin-bottom: 25em; 
 }
 /* footer */
+
+
+/* product coaches */
+
+
+ul.cards {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ul.cards li:before {
+    content: none;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    border: solid 1px #eee;
+    border-radius: 20px;
+    background-color: white;
+
+    width: 320px;
+    height: 305px;
+    margin: 0rem 0.5rem 0rem 0.5rem; 
+}
+.card-for-books {
+    width: 200px;
+    height: 400px;
+    margin: 0rem 0.5rem 0rem 0.5rem; 
+}
+.card a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    border-bottom: solid 1px #eee;
+}
+.card-image-for-books {
+    height: 295px;
+}
+
+.card-content {
+    height: 105px;
+    padding: 0.8rem;
+}
+
+.card-content-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+.card-content-title-for-books {
+    -webkit-line-clamp: 4;
+}
+.card-content-desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    
+    font-weight: normal;
+    font-size: 0.8rem;
+    color: #666;
+}
