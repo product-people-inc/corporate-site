@@ -8,10 +8,10 @@ body {
     margin: 0 auto;
     max-width: 1200px;
     background-color:hsla(0,0%,100%,1);
-background-image:
+    background-image:
 radial-gradient(at 100% 100%, hsla(193,100%,50%,0.1) 0px, transparent 80%),
 radial-gradient(at 0% 0%, hsla(341,0%,100%,1) 0px, transparent 50%);
-background-attachment: fixed;
+    background-attachment: fixed;
 }
 
 header, main, footer {
@@ -96,8 +96,8 @@ article.mission {
 }
 
 article.mission .mission_statement {
-    font-size: 1.5em;
-    line-height: 2.5rem;
+    font-size: 1.0em;
+    line-height: 1.6rem;
 }
 
 article.service  li {
