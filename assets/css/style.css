@@ -22,6 +22,10 @@ a {
     color: #444444;
 }
 
+b {
+    font-weight: bold;
+}
+
 p {
     text-align: center;
 }
@@ -85,10 +89,7 @@ ul {
 
 li {
     padding:0 0 0.7em 0;
-}
-
-main li:before {
-    content: "• ";
+    list-style: disc;
 }
 
 article.mission {
@@ -100,9 +101,13 @@ article.mission .mission_statement {
     line-height: 1.6rem;
 }
 
+article.service section {
+    max-width: 450px;
+    margin: auto
+}
 article.service  li {
     font-size: 0.8em;
-    text-align: center;
+    text-align: left;
     color: #555555;
 }
 
