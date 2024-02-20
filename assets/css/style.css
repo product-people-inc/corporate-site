@@ -89,7 +89,7 @@ ul {
 
 li {
     padding:0 0 0.7em 0;
-    list-style: disc;
+    list-style-type: disc;
 }
 
 article.mission {
@@ -169,13 +169,12 @@ article.contact {
 
 
 ul.cards {
-    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-ul.cards li:before {
-    content: none;
+ul.cards li {
+    list-style: none;
 }
 
 .card {
