@@ -6,15 +6,13 @@
 
 body {
     margin: 0 auto;
-    max-width: 1200px;
-    background-color:hsla(359,0%,96%,1);
-    background-image:
-radial-gradient(at 100% 100%, hsla(198,100%,50%,0.1) 0px, transparent 30%),
-radial-gradient(at 0% 0%, hsla(359,0%,96%,1) 0px, transparent 50%);
-    background-attachment: fixed;
 }
 
-header, main, footer {
+body.profile{
+    max-width: 1200px;
+}
+
+main, footer {
     width: 100%;
 }
 
@@ -33,28 +31,8 @@ span.note {
     font-size: 0.7rem;
 }
 
-/* header */
-header {
-    background-color: white;
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    max-width: 100%;
-}
-
-header h1 {
-    margin: 0;
-}
-
-header img {
-    width: 350px;
-    max-width: 100%;
-}
-
 /* main */
 main {
-    margin-top: 120px;
 }
 
 main h1 {
@@ -62,6 +40,7 @@ main h1 {
 }
 
 article {
+    padding: 2em 0;
     margin-bottom: 5em;
 }
 
@@ -74,12 +53,10 @@ article > h1 {
     font-weight: 300;
     font-size: 3.0rem;
     letter-spacing: -0.1rem;
-    /* background: linear-gradient(transparent 70%, #fff952 70%, #fff952 100%); */
 }
 
 section > h1 {
     font-weight: bold;
-    /* background: linear-gradient(transparent 70%, #2eb2ff 70%, #2eb2ff 100%);*/
 }
 
 ul {
@@ -92,8 +69,18 @@ li {
     list-style-type: disc;
 }
 
+article.odd {
+    background-color:hsla(359,0%,96%,1);
+    background-image:
+radial-gradient(at 100% 100%, hsla(198,100%,50%,0.1) 0px, transparent 30%),
+radial-gradient(at 0% 0%, hsla(359,0%,96%,1) 0px, transparent 50%);
+}
+article.even {
+    background-color: white;
+}
+
 article.mission {
-    padding: 7em 0 15em 0;
+    padding: 15em 0 15em 0;
 }
 
 article.mission .mission_statement {
