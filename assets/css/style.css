@@ -8,14 +8,6 @@ body {
     margin: 0 auto;
 }
 
-body.profile{
-    max-width: 1200px;
-    background-color:hsla(359,0%,96%,1);
-    background-image:
-radial-gradient(at 100% 100%, hsla(198,100%,50%,0.1) 0px, transparent 30%),
-radial-gradient(at 0% 0%, hsla(359,0%,96%,1) 0px, transparent 50%);
-}
-
 main, footer {
     width: 100%;
 }
@@ -191,8 +183,22 @@ section.contact {
 /* -------------------------- */
 /* product coaches page*/
 /* -------------------------- */
-main.profile > section {
-    padding: 0;
+body.profile > header > h1 {
+    text-align: center;
+}
+nav ul {
+    margin-inline: auto;
+    text-align: center;
+    font-size: 0.9em;
+}
+nav ul li {
+    display: inline;
+    margin: 0.1rem;
+}
+
+ul.profile-list {
+    max-width: 800px;
+    margin-inline: auto;
 }
 
 ul.timeline {
@@ -204,7 +210,6 @@ li.timeline-section {
     display: grid;
     grid-template-columns: 40px 1fr;
     gap: 10px;
-    max-width: 1200px;
     margin-inline: auto;
 }
 li.timeline-section::before {
@@ -258,12 +263,12 @@ div.timeline-content li {
     list-style: ;
 }
 
-
 /* cards */
 ul.cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1040px;
 }
 ul.cards li {
     list-style: none;
