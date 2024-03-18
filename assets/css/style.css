@@ -141,6 +141,7 @@ ul.client_logo{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 8px;
     max-width: 800px;
     margin: auto;
     padding: 0;
@@ -151,7 +152,6 @@ ul.client_logo li {
     border: #eeeeee 1px solid;
     border-radius: 5%;
     background-color: white;
-    margin: 8px;
 
     display: flex;
     justify-content: center;
