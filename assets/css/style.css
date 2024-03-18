@@ -44,11 +44,11 @@ main h1 {
 }
 
 section.top-level  {
-    padding: 2em;
+    padding: 1.5em;
 }
  
 section {
-    padding: 2em;
+    padding: 1.5em;
 }
 
 section.odd {
@@ -143,6 +143,7 @@ ul.client_logo{
     justify-content: center;
     max-width: 800px;
     margin: auto;
+    padding: 0;
 }
 ul.client_logo li {
     width: 160px;
