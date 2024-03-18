@@ -191,6 +191,9 @@ section.contact {
 /* -------------------------- */
 /* product coaches page*/
 /* -------------------------- */
+main.profile > section {
+    padding: 0;
+}
 
 ul.timeline {
     list-style: none;
