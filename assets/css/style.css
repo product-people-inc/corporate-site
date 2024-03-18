@@ -10,6 +10,10 @@ body {
 
 body.profile{
     max-width: 1200px;
+    background-color:hsla(359,0%,96%,1);
+    background-image:
+radial-gradient(at 100% 100%, hsla(198,100%,50%,0.1) 0px, transparent 30%),
+radial-gradient(at 0% 0%, hsla(359,0%,96%,1) 0px, transparent 50%);
 }
 
 main, footer {
@@ -39,18 +43,26 @@ main h1 {
     text-align: center;
 }
 
-article {
-    padding: 2em 0;
-    margin-bottom: 5em;
+section.top-level  {
+    padding: 2em;
 }
-
+ 
 section {
-    margin-bottom: 3em;
-    padding: 0 2em 0 2em;
+    padding: 2em;
 }
 
-article > h1 {
-    font-weight: 300;
+section.odd {
+    background-color:hsla(359,0%,96%,1);
+    background-image:
+radial-gradient(at 100% 100%, hsla(198,100%,50%,0.1) 0px, transparent 30%),
+radial-gradient(at 0% 0%, hsla(359,0%,96%,1) 0px, transparent 50%);
+}
+section.even {
+    background-color: white;
+}
+
+section.top-level > h1 {
+    font-weight: 400;
     font-size: 3.0rem;
     letter-spacing: -0.1rem;
 }
@@ -60,101 +72,190 @@ section > h1 {
 }
 
 ul {
-    padding:0.2em 1em 0 1em;
-    list-style-type: none;
+    padding: 0.2em 1em 0 1em;
 }
 
 li {
-    padding:0 0 0.7em 0;
+    padding: 0 0 0.7em 0;
     list-style-type: disc;
 }
 
-article.odd {
-    background-color:hsla(359,0%,96%,1);
-    background-image:
-radial-gradient(at 100% 100%, hsla(198,100%,50%,0.1) 0px, transparent 30%),
-radial-gradient(at 0% 0%, hsla(359,0%,96%,1) 0px, transparent 50%);
-}
-article.even {
-    background-color: white;
-}
-
-article.mission {
+/* mission */
+section.mission {
     padding: 15em 0 15em 0;
 }
-
-article.mission .mission_statement {
+section.mission .mission_statement {
     font-size: 1.0em;
     line-height: 1.6rem;
 }
 
-article.service section {
+/* service */
+section.service section {
     max-width: 450px;
     margin: auto
 }
-article.service  li {
-    font-size: 0.8em;
+section.service  li {
+    font-size: 0.9em;
     text-align: left;
     color: #555555;
 }
 
-article.coach {
+/* coach */
+section.coach {
     text-align: center;
 }
-.profile_photo {
+section.coach section.coach_profile {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    place-items: center;
+    max-width: 800px;
+    margin-inline: auto;
+}
+@media(max-width: 800px){
+    section.coach section.coach_profile  {
+        grid-template-columns: 1fr;
+    }
+}
+img.profile_photo {
     border-radius: 5%;
     width: 200px;
 }
-article.coach .profile_detail{
-    max-width: 500px;
-    margin:auto;
-}
-article.coach .coach_name {
+section.coach p.coach_name {
     font-weight: bold;
 }
-
-article.coach .sns li {
+section.coach .sns li {
     display: inline;
     font-size: 1.3em;
     padding-right: 0.4em;
 }
-article.coach .sns li:before {
+section.coach .sns li:before {
     content: none;
 }
-article.coach .sns a {
+section.coach .sns a {
     text-decoration: underline;
 }
 
-article.company table.company_info {
+/* client */
+ul.client_logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+}
+ul.client_logo li {
+    width: 160px;
+    height: 160px;
+    border: #eeeeee 1px solid;
+    border-radius: 5%;
+    background-color: white;
+    margin: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul.client_logo li  img {
+    width: 120px;
+}
+
+/* company */
+section.company table.company_info {
     margin:auto;
     max-width: 500px;
 }
-article.company table.company_info th, table.company_info td {
+section.company table.company_info th, table.company_info td {
     border-bottom: solid black 1px;
     padding-top: 2em;
     padding-bottom: 0.5em;
 
 }
-article.company table.company_info th {
+section.company table.company_info th {
     font-weight: bold;
     text-align: left;
     vertical-align: top;
     padding-right: 2em;
     min-width: 100px;
 }
-article.company table.company_info td {
+section.company table.company_info td {
 
 }
 
-article.contact {
+/* contact */
+section.contact {
     margin-bottom: 25em; 
 }
-/* footer */
+
+/* -------------------------- */
+/* product coaches page*/
+/* -------------------------- */
+
+ul.timeline {
+    list-style: none;
+    position:relative; 
+    padding: 0;
+}
+li.timeline-section {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 10px;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+li.timeline-section::before {
+    position: absolute;
+    content: "";
+    display: block;
+    border-left: 2px solid #aaa;
+    top: 2px;
+    bottom: 0px;
+    left: 19px;
+}
+div.timeline-icon {
+    background-color: #555;
+    border-radius: 9999vmax;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 999;
+}
+div.timeline-content {
+    margin: 0 0 0.4em 6px;
+}
+div.timeline-content h2{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0 0 0.3em 0;
+    letter-spacing: 0.1rem;
+}
+div.timeline-content p.timeline-date{
+    display: inline;
+    font-size: 0.8em;
+    margin-left: 0.5em;
+    color: #777;
+}
+div.timeline-content p.timeline-title{
+    display: inline;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #333;
+}
+div.timeline-content ul {
+    padding-bottom: 0.3em;
+}
+div.timeline-content li {
+    font-size: 0.9em;
+    padding: 0;
+    color: #333;
+    list-style: ;
+}
 
 
-/* product coaches */
-
-
+/* cards */
 ul.cards {
     display: flex;
     flex-wrap: wrap;
@@ -163,7 +264,6 @@ ul.cards {
 ul.cards li {
     list-style: none;
 }
-
 .card {
     position: relative;
     display: flex;
@@ -190,7 +290,6 @@ ul.cards li {
     height:100%;
     width: 100%;
 }
-
 .card-image {
     width: 100%;
     height: 200px;
@@ -204,12 +303,10 @@ ul.cards li {
 .card-image-for-books {
     height: 295px;
 }
-
 .card-content {
     height: 105px;
     padding: 0.8rem;
 }
-
 .card-content-title {
     overflow: hidden;
     text-overflow: ellipsis;
