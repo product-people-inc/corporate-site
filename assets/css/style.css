@@ -175,6 +175,73 @@ section.company table.company_info td {
 
 }
 
+/* news */
+section.news ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+}
+section.news ul {
+    max-width: 800px;
+    margin: auto;
+}
+section.news li {
+  padding: 0.2em 0;
+  border-bottom: 1px solid #ccc;
+}
+section.news li:first-child {
+  border-top: 1px solid #ccc;
+}
+section.news li {
+ position: relative;
+ display: flex;
+}
+section.news time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+    width: 7em;
+}
+section.news div.category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 0.8em;
+    margin: auto;
+    background: #ddd;
+    border-radius: 14px;
+    width: 7em;
+}
+section.news div.speaking {
+    background: #d2dde2;
+}
+section.news div.sponsor {
+    background: #e2d2da;
+}
+section.news div.material {
+    background: #d5e2d2;
+}
+section.news p {
+    flex: 1;
+    text-align: left;
+    margin-left: 1em;
+}
+
+@media screen and (max-width: 640px) {
+    section.news li {
+        display: block;
+    }
+    section.news p {
+        text-align: center;
+        margin: 0 1.5em;
+    }
+}
+
+
 /* contact */
 section.contact {
     margin-bottom: 25em; 
