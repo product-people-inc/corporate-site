@@ -153,28 +153,6 @@ ul.client_logo li  img {
     width: 120px;
 }
 
-/* company */
-section.company table.company_info {
-    margin:auto;
-    max-width: 500px;
-}
-section.company table.company_info th, table.company_info td {
-    border-bottom: solid black 1px;
-    padding-top: 2em;
-    padding-bottom: 0.5em;
-
-}
-section.company table.company_info th {
-    font-weight: bold;
-    text-align: left;
-    vertical-align: top;
-    padding-right: 2em;
-    min-width: 100px;
-}
-section.company table.company_info td {
-
-}
-
 /* news */
 section.news ul {
     list-style: none;
@@ -187,22 +165,27 @@ section.news ul {
     margin: auto;
 }
 section.news li {
-  padding: 0.2em 0;
-  border-bottom: 1px solid #ccc;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #ccc;
 }
 section.news li:first-child {
   border-top: 1px solid #ccc;
 }
 section.news li {
- position: relative;
- display: flex;
+    position: relative;
+    display: flex;
+}
+section.news .category-n-title {
+    display: flex;
+    flex: 1;
 }
 section.news time {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
 
-    margin: auto;
+    margin: auto 0;
     width: 7em;
 }
 section.news div.category {
@@ -228,23 +211,46 @@ section.news div.material {
 section.news p {
     flex: 1;
     text-align: left;
-    margin-left: 1em;
+    margin: auto auto auto 1em;
 }
-
 @media screen and (max-width: 640px) {
     section.news li {
         display: block;
     }
-    section.news p {
-        text-align: center;
-        margin: 0 1.5em;
+    section.news time {
+        margin: auto;
+    }
+    section.news div.category {
+        margin-left: 0.7em;
+        font-size: 0.7em;
+        width: 5em;
     }
 }
 
+/* company */
+section.company table.company_info {
+    margin:auto;
+    max-width: 500px;
+}
+section.company table.company_info th, table.company_info td {
+    border-bottom: solid #ccc 1px;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+
+}
+section.company table.company_info th {
+    font-weight: bold;
+    text-align: left;
+    vertical-align: top;
+    padding-right: 2em;
+    min-width: 100px;
+}
+section.company table.company_info td {
+}
 
 /* contact */
 section.contact {
-    margin-bottom: 25em; 
+    padding-bottom: 25em; 
 }
 
 /* -------------------------- */
