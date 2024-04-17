@@ -83,10 +83,12 @@ section.mission .mission_statement {
 
 /* service */
 section.service section {
-    max-width: 450px;
-    margin: auto
+    max-width: 600px;
+    margin: auto;
 }
-section.service  li {
+section.service  ul {
+    max-width: 500px;
+    margin-inline: auto;
     font-size: 0.9em;
     text-align: left;
     color: #555555;
