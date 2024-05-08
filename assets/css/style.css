@@ -93,6 +93,21 @@ section.service  ul {
     text-align: left;
     color: #555555;
 }
+section.service  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    margin-inline: auto;
+    text-align: center;
+    line-height: 1.5em;
+    background-color: #d2dde2;
+    width: 200px;
+    height: 5em;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
 
 /* coach */
 section.coach {
