@@ -353,6 +353,20 @@ div.timeline-content li {
     list-style: ;
 }
 
+/* -------------------------- */
+/* privacy policy page*/
+/* -------------------------- */
+body.privacy-policy h1, body.privacy-policy  h2, body.privacy-policy  p {
+    text-align: left;
+}
+body.privacy-policy  section {
+    width: 800px;
+    margin-inline: auto;
+}
+body.privacy-policy ol  li {
+    list-style-type: decimal;
+}
+
 /* cards */
 ul.cards {
     display: flex;
