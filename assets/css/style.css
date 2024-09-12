@@ -273,6 +273,9 @@ section.contact {
 /* -------------------------- */
 /* product coaches page*/
 /* -------------------------- */
+nav.back {
+    padding: 0.5em 1em;
+}
 body.profile > header > h1 {
     text-align: center;
 }
