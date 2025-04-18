@@ -44,10 +44,31 @@
     <meta name="twitter:site" content="@ykmc09">
 
     <script src="https://kit.fontawesome.com/47813f4abc.js" crossorigin="anonymous"></script>
-    <script type='text/javascript' src='assets/js/script.js' defer></script>
     <script src="assets/js/script.js" defer></script>
 </head>
 <body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="./" class="logo">
+                <img src="./assets/images/logo.webp" alt="Product People" width="120" height="56">
+            </a>
+            <button class="hamburger-menu" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#coach">Coaches</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#company">Company</a></li>
+                    <li><a href="#contact" class="contact-button">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
 <!--
 <header>
@@ -58,13 +79,17 @@
 <main>
     <section class="top-level mission odd">
         <section>
-            <p><img src="./assets/images/logo.webp" width="240" height="111"></p>
-            <p class="mission_statement">プロダクトも人も<br>成長する組織へ<br><br><br>プロダクトコーチング、<br>プロダクトマネジメント導入、<br>プロダクトマネージャー育成の<br>Product People Inc.</p>
+            <div class="mission_main">
+                <p class="mission_statement">プロダクトも人も<br>成長する組織へ</p>
+            </div>
+            <div class="mission_sub">
+                <p>プロダクトコーチングの<br>Product People Inc.</p>
+            </div>
         </section>
     </section>
 
-    <section class="top-level service even">
-        <h1>Service</h1>
+    <section class="top-level service even" id="service">
+        <h1>Services</h1>
         <section>
             <h1>プロダクトコーチング</h1>
             <p>プロダクトづくりのさまざまな課題を、経験豊かなプロダクトコーチが週1回〜のセッションを通じて伴走しながら解決に導きます</p>
@@ -82,8 +107,8 @@
         </section>
     </section>
 
-    <section class="top-level coach odd">
-        <h1>Product Coach</h1>
+    <section class="top-level coach odd" id="coach">
+        <h1>Product Coaches</h1>
         <p>ソフトウェア企業での活躍実績を持つコーチが、プロダクトコーチングを提供します</p>
         <section class="coach_profile">
             <div class="profile_photo">
@@ -100,7 +125,7 @@
         </section>
     </section>
 
-    <section class="top-level client even">
+    <section class="top-level client even" id="clients">
         <h1>Clients</h1>
         <p>ご支援実績 企業さま（一部）</p>
         <ul class="client_logo">
@@ -116,7 +141,7 @@
         </ul>
     </section>
 
-    <section class="top-level news odd">
+    <section class="top-level news odd" id="news">
         <h1>News</h1>
         <ul class="news-list">
             <li>
@@ -399,7 +424,7 @@
         <button class="news-more-button">さらに10件表示</button>
     </section>
 
-    <section class="top-level company even">
+    <section class="top-level company even" id="company">
         <h1>Company</h1>
         <section>
             <table class="company_info">
@@ -431,12 +456,17 @@
             サービス内容詳細や料金、体験セッションのご希望は、以下からお問い合わせください。<br>
             <a href="https://forms.gle/4UByjz1LnjLfPnic7">問い合わせフォーム</a>
         </p>
-        <p><br><br><a href="./privacypolicy.html">プライバシーポリシー</a></p>
     </section>
 
 </main>
 
-<footer>
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-copyright">        
+            <p><a href="./privacypolicy.html">プライバシーポリシー</a></p>
+            <p>&copy; Product People Inc.</p>
+        </div>
+    </div>
 </footer>
 
 </body>
