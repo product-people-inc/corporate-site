@@ -653,6 +653,7 @@ ul.cards li {
     
     font-weight: bold;
     font-size: 0.9rem;
+    line-height: 1.3rem;
     margin-bottom: 0.3rem;
 }
 .card-content-title-for-books {
@@ -668,6 +669,7 @@ ul.cards li {
     
     font-weight: normal;
     font-size: 0.8rem;
+    line-height: 1.3rem;
     color: #666;
 }
 
