@@ -127,21 +127,6 @@ section.service  ul {
     text-align: left;
     color: #555555;
 }
-section.service  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2em;
-    margin-inline: auto;
-    text-align: center;
-    line-height: 1.5em;
-    background-color: #d2dde2;
-    width: 200px;
-    height: 5em;
-    border-radius: 50px;
-    text-decoration: none;
-}
-
 
 /* coach */
 section.coach {
@@ -329,9 +314,46 @@ section.company table.company_info th {
 section.company table.company_info td {
 }
 
+/* 共通ボタンスタイル */
+.primary-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    margin-inline: auto;
+    text-align: center;
+    line-height: 1.5em;
+    background-color: #d2dde2;
+    width: 200px;
+    height: 5em;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #444444;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.primary-button:hover {
+    background-color: #c0d0d8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.primary-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* contact */
 section.contact {
-    padding-bottom: 2em; 
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+section.contact p {
+    margin-bottom: 2em;
 }
 
 /* フッター */
@@ -414,6 +436,29 @@ ul.profile-list {
     margin-inline: auto;
 }
 
+/* ヘッダーの問い合わせボタン */
+.contact-button {
+    padding: 0.5rem 1.5rem;
+    background-color: #d2dde2;
+    color: #444444 !important;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-button:hover {
+    background-color: #c0d0d8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.contact-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* タイムラインのスタイル */
 ul.timeline {
     list-style: none;
     position:relative; 
@@ -582,6 +627,21 @@ ul.cards li {
     z-index: 1000;
 }
 
+/* 大枠 */
+.color-bar{
+    /* 適宜調整 */
+    height: 12px;
+    /* 6 色のストライプを横方向に並べる */
+    background: linear-gradient(to right,
+      #ff6200  0%   16.6% ,  /* Orange */
+      #ffba00 16.6% 33.3% ,  /* Yellow */
+      #00c6ff 33.3% 50%   ,  /* Cyan   */
+      #0084ff 50%   66.6% ,  /* Blue   */
+      #1a00ff 66.6% 87.5% ,  /* Royal  */
+      #08004c 87.5% 100%     /* Navy   */
+    );
+  }
+
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -620,19 +680,6 @@ ul.cards li {
 
 .main-nav a:hover {
     color: #666;
-}
-
-.contact-button {
-    padding: 0.5rem 1.5rem;
-    background: #333;
-    color: #fff !important;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.contact-button:hover {
-    background: #555;
-    color: #fff !important;
 }
 
 /* ハンバーガーメニューボタン */
@@ -745,8 +792,71 @@ ul.cards li {
         display: inline-block;
         text-align: center;
     }
+
+    .contact-button {
+        width: 100%;
+        margin: 0.5em 0;
+    }
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+/* 提携プロダクトコーチ */
+.partner-coaches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.partner-coach {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+.partner-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 0.8em;
+}
+
+.partner-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.partner-info h3 {
+    font-size: 1em;
+    margin-bottom: 0.3em;
+    color: #333;
+}
+
+.partner-info p {
+    font-size: 0.8em;
+    line-height: 1.4;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .partner-coaches {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .partner-coaches {
+        grid-template-columns: 1fr;
+    }
 }
