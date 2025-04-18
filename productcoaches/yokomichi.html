@@ -47,19 +47,41 @@
 </head>
 <body class="profile">
 
-<header>
-    <nav class="back"><a href="../">&lt;&lt; BACK</a></nav>
+<header class="site-header">
+    <div class="color-bar"></div>
+    <div class="header-container">
+        <a href="../" class="logo">
+            <img src="../assets/images/logo.webp" alt="Product People" width="120" height="56">
+        </a>
+        <button class="hamburger-menu" aria-label="メニュー">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html#service">提供サービス</a></li>
+                <li><a href="../index.html#coach">コーチ紹介</a></li>
+                <li><a href="../index.html#news">ニュース</a></li>
+                <li><a href="../index.html#company">会社概要</a></li>
+                <li><a href="../index.html#contact" class="contact-button">問い合わせ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<header class="profile-header">
     <h1>コーチ プロフィール</h1>
     <nav>
         <ul>
-            <li><a href="#desc">プロフィール概要</a></li> | 
-            <li><a href="#career">職務経歴</a></li> | 
-            <li><a href="#community">コミュニティ活動実績</a></li> | 
-            <li><a href="#certification">保有資格</a></li> | 
-            <li><a href="#translation">書籍 翻訳</a></li> | 
-            <li><a href="#media">メディア掲載</a></li> | 
-            <li><a href="#presentation">プレゼンテーション</a></li> | 
-            <li><a href="#blog">ブログ記事</a></li> | 
+            <li><a href="#desc">プロフィール概要</a></li>
+            <li><a href="#career">職務経歴</a></li>
+            <li><a href="#community">コミュニティ活動実績</a></li>
+            <li><a href="#certification">保有資格</a></li>
+            <li><a href="#translation">書籍 翻訳</a></li>
+            <li><a href="#media">メディア掲載</a></li>
+            <li><a href="#presentation">プレゼンテーション</a></li>
+            <li><a href="#blog">ブログ記事</a></li>
             <li><a href="#contribution">書籍 貢献</a></li>
         </ul>
     </nav>
@@ -279,7 +301,7 @@
                     <div class="card-image"
                             style="background-image: url('https://type.jp/et/feature/wp-content/uploads/2024/12/3d6ef36dac8fe0f9ed4860a74c58e952.jpg');"></div>
                     <div class="card-content">
-                        <div class="card-content-title">”なんちゃってDX”脱出の鍵は、シリコンバレー企業の成功を支える「プロダクトモデル」にあり【及川卓也×横道 稔】</div>
+                        <div class="card-content-title">"なんちゃってDX"脱出の鍵は、シリコンバレー企業の成功を支える「プロダクトモデル」にあり【及川卓也×横道 稔】</div>
                         <div class="card-content-desc">(2024)
                         </div>
                     </div>
@@ -420,7 +442,7 @@
                     <div class="card-image"
                             style="background-image: url('https://next.rikunabi.com/journal/wp-content/uploads/2018/05/line-main.jpg');"></div>
                     <div class="card-content">
-                        <div class="card-content-title">組織の「外から変える」ではなく「中から変わる」―永和システムマネジメント平鍋健児と、LINE横道稔が語る“アジャイル開発”の本質</div>
+                        <div class="card-content-title">組織の「外から変える」ではなく「中から変わる」―永和システムマネジメント平鍋健児と、LINE横道稔が語る"アジャイル開発"の本質</div>
                         <div class="card-content-desc">社内アジャイル推進に対するの思いについてお話しました (2018)</div>
                     </div>
                 </div>
@@ -592,11 +614,15 @@
             <li>2018年: 書籍『<a href="https://www.shoeisha.co.jp/book/detail/9784798153346">カイゼン・ジャーニー たった1人からはじめて、「越境」するチームをつくるまで</a>』レビュアー
         </ul>
     </section>
-
-    <p><a href="../"><i class="fa-solid fa-house"></i> BACK</a></p>
 </main>
 
-<footer>
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-copyright">        
+            <p><a href="../privacypolicy.html">プライバシーポリシー</a></p>
+            <p>&copy; Product People Inc.</p>
+        </div>
+    </div>
 </footer>
 
 </body>
