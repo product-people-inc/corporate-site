@@ -519,6 +519,20 @@ li.timeline-section::before {
     bottom: 0px;
     left: 19px;
 }
+li.timeline-section:last-child::before {
+    height: 20px; /* 最後の要素の線の長さを調整 */
+}
+li.timeline-section:last-child::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #555;
+    border-radius: 50%;
+    left: 15px;
+    bottom: 0;
+}
 div.timeline-icon {
     background-color: #555;
     border-radius: 9999vmax;
