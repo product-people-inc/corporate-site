@@ -94,6 +94,21 @@ section.mission .mission_statement {
     color: #333;
 }
 
+@media (max-width: 768px) {
+    section.mission .mission_statement {
+        font-size: 1.8em;
+        line-height: 1.4;
+        letter-spacing: 0.05em;
+    }
+}
+
+@media (max-width: 480px) {
+    section.mission .mission_statement {
+        font-size: 1.5em;
+        line-height: 1.3;
+    }
+}
+
 section.mission .mission_sub {
     font-size: 1.0em;
     line-height: 1.6;
