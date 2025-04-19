@@ -392,7 +392,7 @@ section.company table.company_info td {
     line-height: 1.5em;
     background: linear-gradient(135deg, #0084ff 0%, #1a00ff 100%);
     width: 200px;
-    height: 5em;
+    height: 3em;
     border-radius: 50px;
     text-decoration: none;
     color: white;
@@ -431,7 +431,7 @@ section.company table.company_info td {
 @media (max-width: 768px) {
     .primary-button {
         width: 180px;
-        height: 4.5em;
+        height: 2.8em;
         font-size: 0.95em;
     }
 }
@@ -528,24 +528,49 @@ ul.profile-list {
 
 /* ヘッダーの問い合わせボタン */
 .contact-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0.5rem 1.5rem;
-    background-color: #d2dde2;
-    color: #444444 !important;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.5em;
+    background: linear-gradient(135deg, #0084ff 0%, #1a00ff 100%);
     border-radius: 50px;
     text-decoration: none;
+    color: white !important;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 10px rgba(0, 132, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 0.05em;
+    width: fit-content;
+    min-width: 120px;
 }
 
 .contact-button:hover {
-    background-color: #c0d0d8;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 132, 255, 0.4);
 }
 
 .contact-button:active {
     transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 132, 255, 0.3);
+}
+
+.contact-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: opacity 0.3s ease;
+}
+
+.contact-button:hover::after {
+    opacity: 0.8;
 }
 
 /* タイムラインのスタイル */
@@ -775,6 +800,7 @@ ul.cards li {
     list-style: none;
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 
 .main-nav a {
@@ -783,6 +809,9 @@ ul.cards li {
     font-size: 0.9rem;
     font-weight: 500;
     transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
 }
 
 .main-nav a:hover {
@@ -841,7 +870,7 @@ ul.cards li {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 80%;
+        width: 70%;
         height: 100vh;
         background: rgba(255, 255, 255, 1);
         transition: all 0.3s ease;
@@ -891,7 +920,7 @@ ul.cards li {
 
     /* コンタクトボタンのスタイル調整 */
     .main-nav .contact-button {
-        padding: 0.8rem 2rem;
+        padding: 0.8rem 0rem;
         margin: 0.5rem 0;
         width: fit-content;
         min-width: 200px;
@@ -901,8 +930,9 @@ ul.cards li {
     }
 
     .contact-button {
-        width: 100%;
-        margin: 0.5em 0;
+        width: fit-content;
+        min-width: 200px;
+        margin: 0.5em auto;
     }
 }
 
