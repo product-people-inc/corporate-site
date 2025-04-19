@@ -173,23 +173,16 @@ section.mission .mission_sub {
 
 /* message */
 @media (max-width: 768px) {
-    section.message > section {
+    section.message {
         padding: 0.5em;
+    }
+    section.message > section {
+        padding: 0;
     }
     section.message p {
         font-size: 0.9rem;
         line-height: 1.8;
         padding: 0;
-    }
-}
-
-@media (max-width: 480px) {
-    section.message > section {
-        padding: 0;
-    }
-    section.message p {
-        font-size: 0.8rem;
-        line-height: 1.6;
     }
 }
 
@@ -837,7 +830,7 @@ ul.cards li {
 }
 
 /* モバイル対応 */
-@media (max-width: 768px) {
+@media (max-width: 840px) {
     .header-container {
         padding: 1rem;
     }
