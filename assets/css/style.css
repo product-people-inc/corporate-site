@@ -1190,3 +1190,38 @@ html {
         padding: 0.1em 0.4em;
     }
 }
+
+/* 書籍サムネイルスタイル */
+.books {
+    display: flex;
+    gap: 0.8em;
+    margin: 1.2em 0;
+    justify-content: center;
+}
+
+.book {
+    display: block;
+    width: 70px;
+    transition: transform 0.3s ease;
+}
+
+.book:hover {
+    transform: translateY(-3px);
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .books {
+        gap: 0.6em;
+    }
+    
+    .book {
+        width: 60px;
+    }
+}
