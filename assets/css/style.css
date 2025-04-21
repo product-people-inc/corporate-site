@@ -215,11 +215,34 @@ section.service section {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: 0;
     box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
 
-.service-category:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+.service-category::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    opacity: 0.05;
+    z-index: 0;
+}
+
+.service-category[data-icon="coaching"]::after {
+    background-image: url('../images/service_coaching.png');
+}
+
+.service-category[data-icon="leadership_program"]::after {
+    background-image: url('../images/service_leadership_program.png');
+}
+
+.service-category[data-icon="training"]::after {
+    background-image: url('../images/service_training.png');
 }
 
 .service-category h3 {
@@ -255,6 +278,8 @@ section.service section {
     color: #555;
     line-height: 1.6;
     font-size: 0.95em;
+    position: relative;
+    z-index: 1;
 }
 
 .service-category ul {
@@ -264,6 +289,8 @@ section.service section {
     text-align: left;
     color: #555555;
     padding-left: 1.2em;
+    position: relative;
+    z-index: 1;
 }
 
 .service-category li {
