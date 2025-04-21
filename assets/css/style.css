@@ -20,7 +20,7 @@ h1, h2 {
     text-align: center;
     line-height: 1.3;
     position: relative;
-    margin: 1rem auto 3rem auto;
+    margin: 1rem auto 1.5rem auto;
     width: fit-content;
     box-sizing: border-box;
 }
@@ -30,8 +30,8 @@ h1 {
     font-size: 1.8rem;
 }
 h2 {
-    font-weight: 300;
-    font-size: 1.4rem;
+    font-weight: 400;
+    font-size: 1.3rem;
 }
 
 h1::before, h2::before {
@@ -185,16 +185,140 @@ section.mission .mission_sub {
 }
 
 /* service */
+section.service {
+    padding-inline: 0.5em;
+}
+
 section.service section {
-    max-width: 600px;
+    max-width: 1200px;
     margin: auto;
 }
-section.service  ul {
-    max-width: 500px;
+
+.service-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1em;
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+.service-category {
+    width: 100%;
+    padding: 1.5em;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.service-category:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.service-category h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.8em;
+    text-align: left;
+    position: relative;
+    padding-bottom: 0.3em;
+}
+
+.service-category h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(90deg, #0084ff, #1a00ff);
+    border-radius: 3px;
+}
+
+.service-category h3 small {
+    font-size: 0.8em;
+    font-weight: 300;
+    color: #666;
+}
+
+.service-category p {
+    text-align: left;
+    margin-bottom: 1em;
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+.service-category ul {
+    max-width: 100%;
     margin-inline: auto;
     font-size: 0.9em;
     text-align: left;
     color: #555555;
+    padding-left: 1.2em;
+}
+
+.service-category li {
+    margin-bottom: 0.2em;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 1em;
+    list-style-type: none;
+}
+
+.service-category li::before {
+    content: '•';
+    color: #0084ff;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.service-category b {
+    color: #333;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .service-categories {
+        grid-template-columns: 1fr;
+        gap: 1.2em;
+        padding: 0 0.5em;
+    }
+    
+    .service-category {
+        padding: 1.2em;
+    }
+    
+    .service-category h3 {
+        font-size: 1.1em;
+    }
+
+    .service-category p {
+        font-size: 0.9em;
+    }
+
+    .service-category ul {
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-category {
+        padding: 1.2em;
+    }
+    
+    .service-category h3 {
+        font-size: 1.2em;
+    }
 }
 
 /* coach */
@@ -433,7 +557,7 @@ section.company table.company_info td {
 /* プライマリーボタン */
 .button--primary {
     padding: 1rem 2rem;
-    margin-top: 2em;
+    margin: 2.5em 0 3.5em 0;
     margin-inline: auto;
 }
 
