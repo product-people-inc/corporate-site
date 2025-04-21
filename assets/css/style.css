@@ -1201,7 +1201,7 @@ html {
 
 .book {
     display: block;
-    width: 70px;
+    width: 80px;
     transition: transform 0.3s ease;
 }
 
@@ -1222,6 +1222,6 @@ html {
     }
     
     .book {
-        width: 60px;
+        width: 70px;
     }
 }
