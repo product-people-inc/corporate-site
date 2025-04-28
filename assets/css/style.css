@@ -194,6 +194,19 @@ section.service section {
     margin: auto;
 }
 
+.service-description-title {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #333;
+}
+
+.service-description-content {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
 .service-categories {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
