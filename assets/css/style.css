@@ -1047,9 +1047,9 @@ html {
 /* 提携プロダクトコーチ */
 .partner-coaches {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5em;
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 0 1em;
 }
@@ -1067,7 +1067,7 @@ html {
 .partner-photo {
     width: 80px;
     height: 80px;
-    border-radius: 50%;
+    border-radius: 5%;
     overflow: hidden;
     margin-bottom: 0.8em;
 }
@@ -1079,14 +1079,36 @@ html {
 }
 
 .partner-info h3 {
-    font-size: 1em;
+    font-size: 1.1em;
     margin-bottom: 0.3em;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.partner-info h3 .sns-icon {
+    font-size: 0.8em;
+    color: #999;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.partner-info h3 .sns-icon:hover {
     color: #333;
 }
 
-.partner-info p {
+.partner-info .coach-title {
     font-size: 0.8em;
-    line-height: 1.4;
+    color: #666;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+}
+
+.partner-info p {
+    font-size: 0.9em;
+    line-height: 1.5;
     color: #666;
 }
 
@@ -1099,6 +1121,7 @@ html {
 @media (max-width: 480px) {
     .partner-coaches {
         grid-template-columns: 1fr;
+        max-width: 400px;
     }
 }
 
