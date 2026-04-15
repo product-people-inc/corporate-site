@@ -229,6 +229,11 @@ section.service {
     padding-inline: 0.5em;
 }
 
+section.service h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
 section.service section {
     max-width: 1200px;
     margin: auto;
@@ -260,42 +265,15 @@ section.service section {
 
 .service-category {
     width: 100%;
-    padding: 1.5em;
+    padding: 1.8em;
     background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: 0;
     box-sizing: border-box;
     position: relative;
-    overflow: hidden;
-}
-
-.service-category::after {
-    content: '';
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 120px;
-    height: 120px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    opacity: 0.05;
-    z-index: 0;
-}
-
-.service-category[data-icon="coaching"]::after {
-    background-image: url('../images/service_coaching.png');
-}
-
-.service-category[data-icon="leadership_program"]::after {
-    background-image: url('../images/service_leadership_program.png');
-}
-
-.service-category[data-icon="training"]::after {
-    background-image: url('../images/service_training.png');
 }
 
 .service-category h3 {
@@ -501,9 +479,9 @@ section.news div.category {
 
     font-size: 0.8em;
     margin: auto;
-    background: #ddd;
     border-radius: 14px;
     width: 7em;
+    background: #ddd;
 }
 section.news div.speaking {
     background: #d2dde2;
