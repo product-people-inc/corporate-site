@@ -83,8 +83,9 @@ main h1 {
 
 section.top-level  {
     padding: 1.5em;
+    position: relative;
 }
- 
+
 section {
     padding: 1.5em;
 }
@@ -140,6 +141,22 @@ section.mission {
 
 section.mission .mission_main {
     margin-bottom: 3em;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: missionFadeIn 1.2s ease-out 0.3s forwards;
+}
+
+section.mission .mission_sub {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: missionFadeIn 1.0s ease-out 0.8s forwards;
+}
+
+@keyframes missionFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 section.mission .mission_statement {
