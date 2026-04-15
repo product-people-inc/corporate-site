@@ -82,7 +82,7 @@ main h1 {
 }
 
 section.top-level  {
-    padding: 1.5em;
+    padding: 4em 1.5em 5em;
     position: relative;
 }
 
@@ -95,6 +95,29 @@ section.odd {
 }
 section.even {
     background-color: white;
+}
+
+/* セクション間グラデーション遷移 */
+section.top-level.even::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to bottom, transparent, hsla(359,0%,96%,1));
+    pointer-events: none;
+}
+
+section.top-level.odd::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to bottom, transparent, white);
+    pointer-events: none;
 }
 
 section.top-level > h1 {
@@ -620,7 +643,6 @@ section.company table.company_info td {
 
 /* contact */
 section.contact {
-    padding-bottom: 2em;
     text-align: center;
 }
 
