@@ -379,6 +379,31 @@ section.service section {
     }
 }
 
+/* framework */
+.framework-figure {
+    max-width: 800px;
+    margin: 0 auto 2em;
+    text-align: center;
+}
+
+.framework-figure img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.framework-note {
+    font-size: 0.85em;
+    color: #888;
+    margin-bottom: 1em;
+}
+
+.framework-figure figcaption {
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 0.5em;
+}
+
 /* coach */
 section.coach {
     text-align: center;
