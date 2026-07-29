@@ -901,11 +901,65 @@ ul.cards li {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
-    
+
     font-weight: normal;
     font-size: 0.8rem;
     line-height: 1.3rem;
     color: #666;
+}
+
+/* cards（コンパクト表示・横4カラム目安） */
+.cards-compact .card {
+    width: 228px;
+    height: 222px;
+    margin: 0.4rem 0.5rem;
+}
+.cards-compact .card-image {
+    height: 128px;
+}
+.cards-compact .card-content {
+    height: 94px;
+    padding: 0.6rem;
+}
+.cards-compact .card-content-title {
+    font-size: 0.78rem;
+    line-height: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+.cards-compact .card-content-desc {
+    font-size: 0.7rem;
+    line-height: 1.05rem;
+}
+
+@media (max-width: 480px) {
+    ul.cards-compact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem 0.6rem;
+        max-width: none;
+    }
+    .cards-compact .card {
+        box-sizing: border-box;
+        width: 100%;
+        height: 178px;
+        margin: 0;
+    }
+    .cards-compact .card-image {
+        height: 98px;
+    }
+    .cards-compact .card-content {
+        height: 80px;
+        padding: 0.5rem;
+    }
+    .cards-compact .card-content-title {
+        font-size: 0.7rem;
+        line-height: 0.95rem;
+        margin-bottom: 0.15rem;
+    }
+    .cards-compact .card-content-desc {
+        font-size: 0.62rem;
+        line-height: 0.85rem;
+    }
 }
 
 /* ヘッダー基本スタイル */
