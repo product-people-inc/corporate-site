@@ -1357,3 +1357,12 @@ html {
         width: 80px;
     }
 }
+
+/* インラインSVGアイコン（Font Awesome Free 6.7.2, CC BY 4.0 — https://fontawesome.com/license/free） */
+.icon {
+    display: inline-block;
+    height: 1em;
+    width: auto;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
